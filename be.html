@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>앨범 재생 페이지</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    
+    .album-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      max-width: 1800px;
+      margin: 100px auto;
+      position: relative;
+    }
+
+   
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 60px;
+      color: #666;
+      cursor: pointer;
+      user-select: none;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .arrow:hover {
+      color: #222;
+    }
+
+    .arrow.left {
+      left: 40px;
+    }
+
+    .arrow.right {
+      right: 40px;
+    }
+
+    
+    .album-cover {
+      width: 700px;
+      height: 700px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+    }
+
+    .album-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    
+    .track-list {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 450px;
+    }
+
+    .track {
+      background-color: #ddd;
+      padding: 20px 24px;
+      border-radius: 10px;
+    }
+
+    .track-title {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    audio {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="album1.html">앨범</a></li>
+        <li><a href="goods.html">굿즈</a></li>
+        <li><a href="member.html">멤버</a></li>
+        <li><a href="history.html">행적</a></li>
+        <li><a href="gallery.html">갤러리</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="album-container">
+    <a href="zero.html" class="arrow left">&#10094;</a>
+
+    <div class="album-cover">
+      <img src="be.jpg" alt="앨범 커버 1">
+    </div>
+
+    <div class="track-list">
+      <div class="track">
+        <div class="track-title">Be Who you Are</div>
+        <audio controls>
+          <source src="audio/Be Who You Are.mp3" type="audio/mpeg">
+          브라우저가 오디오를 지원하지 않습니다.
+        </audio>
+      </div>
+    </div>
+
+    <a href="gods.html" class="arrow right">&#10095;</a>
+  </section>
+</body>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>굿즈 페이지</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css" />
+  <style>
+            header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+     body {
+      margin: 0;
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+
+    .goods-container {
+      text-align: center;
+      position: relative;
+      margin-top: 150px; 
+    }
+
+    .side-img {
+      width: 300px;
+      height: 300px;
+      opacity: 0.7;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .center-img {
+      width: 500px;
+      height: 500px;
+      opacity: 1;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 30px;
+    }
+
+    .description {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+      color: gray;
+      text-decoration: none;
+    }
+
+    .arrow:hover {
+      color: black;
+    }
+
+    .left-arrow {
+      left: 50px;
+    }
+
+    .right-arrow {
+      right: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="album1.html">앨범</a></li>
+        <li><a href="goods.html">굿즈</a></li>
+        <li><a href="member1.html">멤버</a></li>
+        <li><a href="history.html">행적</a></li>
+        <li><a href="gallery.html">갤러리</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <div class="goods-container">
+
+    <a href="goods.html" class="arrow left-arrow">&#10094;</a>
+
+    <img src="응원봉.png" alt="왼쪽 굿즈 이미지" class="side-img">
+
+    
+    <img src="키링.png" alt="가운데 굿즈 이미지" class="center-img">
+
+    
+    <img src="파우치.jpg" alt="오른쪽 굿즈 이미지" class="side-img">
+
+  
+    <a href="goods copy 2.html" class="arrow right-arrow">&#10095;</a>
+
+    <h1>키링</h1>
+
+
+    <div class="description">
+      귀여운 뉴진스 상징의 키링
+    </div>
+  </div>
+</body>
+</html>

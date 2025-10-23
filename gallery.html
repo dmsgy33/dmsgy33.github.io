@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>뉴진스 갤러리</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      margin-top: 40px;
+    }
+
+    /* 갤러리 */
+    .gallery-container {
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 30px 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .gallery {
+      display: inline-flex;
+      gap: 40px; /* 이미지 간격 */
+      padding: 0 40px;
+    }
+
+    .gallery img {
+      width: 70vw; /* 화면 폭의 70% */
+      height: calc(70vw * 9 / 16); /* 16:9 비율 */
+      object-fit: cover;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15); /* 은은한 그림자 */
+    }
+
+    /* 스크롤바는 기본 모양 유지 */
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="album1.html">앨범</a></li>
+        <li><a href="goods.html">굿즈</a></li>
+        <li><a href="member1.html">멤버</a></li>
+        <li><a href="history.html">행적</a></li>
+        <li><a href="gallery.html">갤러리</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>NewJeans 갤러리</h1>
+
+    <div class="gallery-container">
+      <div class="gallery">
+        <img src="갤1.jpg" alt="뉴진스 이미지 1">
+        <img src="갤2.jpg" alt="뉴진스 이미지 2">
+        <img src="갤3.jpg" alt="뉴진스 이미지 3">
+        <img src="갤4.webp" alt="뉴진스 이미지 4">
+        <img src="갤5.webp" alt="뉴진스 이미지 5">
+        <img src="갤6.webp" alt="뉴진스 이미지 5">
+        <img src="갤7.webp" alt="뉴진스 이미지 5">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+

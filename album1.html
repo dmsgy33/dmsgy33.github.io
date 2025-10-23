@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>앨범 & 노래소개 1</title>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css" />
+
+  <style>
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+     body {
+      margin: 0;
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+
+
+ 
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      margin: 50px 0 30px;
+    }
+
+    
+    .album-section {
+      max-width: 1600px; 
+      margin: 0 auto 100px;
+      padding: 0 40px;
+    }
+
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 50px; 
+      justify-items: center;
+    }
+
+    .album-item {
+      text-align: center;
+    }
+
+    .album-item img {
+      width: 260px;    
+      height: 260px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s, opacity 0.3s;
+      cursor: pointer;
+    }
+
+    .album-item img:hover {
+      transform: scale(1.05);
+      opacity: 0.85;
+    }
+
+    .album-item p {
+      margin-top: 12px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="album1.html">앨범</a></li>
+        <li><a href="goods.html">굿즈</a></li>
+        <li><a href="member1.html">멤버</a></li>
+        <li><a href="history.html">행적</a></li>
+        <li><a href="gallery.html">갤러리</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <h1>Album</h1>
+
+
+  <section class="album-section">
+    <div class="album-grid">
+      <div class="album-item">
+        <a href="newjeans.html"><img src="newjeans.jpg" alt="앨범 2"></a>
+        <p>New Jeans</p>
+      </div>
+      <div class="album-item">
+        <a href="ditto.html"><img src="ditto.jpg" alt="앨범 1"></a>
+        <p>Ditto</p>
+      </div>
+      <div class="album-item">
+        <a href="omg.html"><img src="omg.jpg" alt="앨범 3"></a>
+        <p>OMG</p>
+      </div>
+      <div class="album-item">
+        <a href="zero.html"><img src="zero.jpg" alt="앨범 4"></a>
+        <p>Zero</p>
+      </div>
+      <div class="album-item">
+        <a href="be.html"><img src="be.jpg" alt="앨범 5"></a>
+        <p>Be Who you Are</p>
+      </div>
+      
+      <div class="album-item">
+        <a href="gods.html"><img src="gods.jpg" alt="앨범 6"></a>
+        <p>Gods</p>
+      </div>
+      <div class="album-item">
+        <a href="our.html"><img src="our.jpg" alt="앨범 7"></a>
+        <p>드라마 수록곡</p>
+      </div>
+      <div class="album-item">
+        <a href="getup.html"><img src="getup.jpg" alt="앨범 8"></a>
+        <p>Get Up</p>
+      </div>
+      <div class="album-item">
+        <a href="howsweet.html"><img src="howsweet.jpg" alt="앨범 9"></a>
+        <p>How Sweet</p>
+      </div>
+      <div class="album-item">
+        <a href="supernatural.html"><img src="꽃.png" alt="앨범 10"></a>
+        <p>Supernatural</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

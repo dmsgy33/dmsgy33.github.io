@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>멤버 1 정보</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background-color: #fff;
+      color: #222;
+      overflow: hidden;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      width: 100%;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .profile-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      height: 100vh;
+      box-sizing: border-box;
+      padding-top: 80px;
+    }
+
+    .member-img {
+      width: 500px;
+      height: 700px;
+      border-radius: 16px;
+      overflow: hidden;
+      background-color: #ccc;
+    }
+
+    .member-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .member-info {
+      flex: 1;
+      max-width: 600px;
+      background-color: #f2f2f2;
+      padding: 50px;
+      border-radius: 12px;
+      box-sizing: border-box;
+    }
+
+    .member-info h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .back-btn {
+      position: fixed;
+      top: 120px;
+      left: 50px;
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="album.html">앨범</a></li>
+        <li><a href="goods.html">굿즈</a></li>
+        <li><a href="member.html">멤버</a></li>
+        <li><a href="event.html">이벤트</a></li>
+        <li><a href="gallery.html">갤러리</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <button class="back-btn" onclick="location.href='member1.html'">← 뒤로가기</button>
+
+  <div class="profile-container">
+    <div class="member-img">
+      <img src="해린.jpg" alt="멤버 1 이미지">
+    </div>
+
+    <div class="member-info">
+      <h2>강해린</h2>
+      <p><strong>생년월일:</strong> 2006.05.15</p>
+      <p><strong>포지션:</strong> 고양이😼</p>
+      <p><strong>취미:</strong> 유튜브 감상, 장난치기</p>
+      <p><strong>소개:</strong> 매력적인 고양이상 매력적인 눈으로 모두를 홀림 행동또한 고양이 같아 매우 귀엽다.</p>
+    </div>
+  </div>
+
+</body>
+</html>
